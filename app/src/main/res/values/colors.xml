@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0E0F11</color>
+    <color name="accent">#C8F031</color>
+    <color name="slow">#FF9F43</color>
+    <color name="text">#F4F5F2</color>
+    <color name="muted">#9BA1A6</color>
+    <color name="secondary">#C9CDD1</color>
+    <color name="notif_card">#1C1F23</color>
+    <color name="notif_line">#2B2F34</color>
+</resources>

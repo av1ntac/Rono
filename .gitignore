@@ -1,0 +1,37 @@
+# Gradle / Kotlin
+.gradle/
+.kotlin/
+build/
+
+# Local machine config (SDK path, signing secrets)
+local.properties
+keystore.properties
+*.jks
+*.keystore
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation/
+
+# Build outputs and dumps
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
+output-metadata.json
+
+# Firebase / Google services config
+google-services.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code local settings
+.claude/settings.local.json

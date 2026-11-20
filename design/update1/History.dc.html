@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rono – history</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-variant-numeric:tabular-nums}
+button{font:inherit;cursor:pointer}
+a{color:#C8F031}a:hover{color:#E2FF7A}
+</style>
+</helmet>
+<div style="width: 412px; height: 915px; box-sizing: border-box; background: #0E0F11; color: #F4F5F2; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 28px 20px 8px; display: flex; flex-direction: column; gap: 2px">
+    <span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; color: {{accent}}">Rono</span>
+    <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 600; letter-spacing: -0.01em">History</h1>
+  </div>
+
+  <div style="padding: 12px 20px 10px; display: flex; justify-content: space-between; align-items: baseline">
+    <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #9BA1A6">November 2026</h2>
+    <span style="font-size: 13px; color: #9BA1A6">7 runs · 43.8 km</span>
+  </div>
+
+  <div style="flex-grow: 1; min-height: 0; overflow-y: auto; padding: 0 16px 16px; display: flex; flex-direction: column; gap: 8px">
+    <sc-for list="{{runs}}" as="r" hint-placeholder-count="7">
+      <a href="Summary.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 14px 12px 14px 16px; border-radius: 20px; background: #17191C; color: #F4F5F2; text-decoration: none">
+        <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+            <span style="font-size: 15px; font-weight: 600">{{r.date}}</span>
+            <span style="font-size: 13px; color: #9BA1A6">{{r.time}}</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">{{r.km}}<span style="font-size: 13px; color: #9BA1A6; font-weight: 500"> km</span></span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">{{r.dur}}</span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">{{r.pace}}<span style="font-size: 13px; color: #9BA1A6; font-weight: 500"> /km</span></span>
+          </div>
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA1A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+      </a>
+    </sc-for>
+  </div>
+
+  <nav aria-label="Main" style="height: 80px; flex-shrink: 0; background: #141619; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center">
+    <a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; color: #9BA1A6; font-size: 12px; font-weight: 500">
+      <span style="width: 64px; height: 32px; display: flex; align-items: center; justify-content: center">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="4" r="2"></circle><path d="M7 21l3-6 3 2v5M10 15l1-5 4 3 3 1M11 10l-3 1-2 3"></path></svg>
+      </span>
+      Run
+    </a>
+    <a href="History.dc.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; color: #F4F5F2; font-size: 12px; font-weight: 600">
+      <span style="width: 64px; height: 32px; border-radius: 999px; background: {{accentSoft}}; color: {{accent}}; display: flex; align-items: center; justify-content: center">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5M12 7v5l3 2"></path></svg>
+      </span>
+      History
+    </a>
+    <a href="History.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; color: #9BA1A6; font-size: 12px; font-weight: 500">
+      <span style="width: 64px; height: 32px; display: flex; align-items: center; justify-content: center">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
+      </span>
+      Profile
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C8F031","options":["#C8F031","#4FD1FF","#FF8A3D"]},"$preview":{"width":412,"height":915}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#C8F031';
+    const runs = [
+      { date: '18.11.2026 (Wednesday)', time: '18:24 – 18:52', km: '5.24', dur: '27:48', pace: '5:18' },
+      { date: '16.11.2026 (Monday)', time: '07:10 – 07:38', km: '5.02', dur: '27:21', pace: '5:27' },
+      { date: '14.11.2026 (Saturday)', time: '09:30 – 10:28', km: '10.12', dur: '57:05', pace: '5:38' },
+      { date: '12.11.2026 (Thursday)', time: '18:05 – 18:27', km: '4.10', dur: '21:33', pace: '5:15' },
+      { date: '10.11.2026 (Tuesday)', time: '17:48 – 18:23', km: '6.35', dur: '34:40', pace: '5:28' },
+      { date: '08.11.2026 (Sunday)', time: '10:12 – 10:57', km: '8.00', dur: '44:24', pace: '5:33' },
+      { date: '05.11.2026 (Thursday)', time: '18:30 – 18:57', km: '5.00', dur: '26:50', pace: '5:22' }
+    ];
+    return { accent: accent, accentSoft: accent + '29', runs: runs };
+  }
+}
+</script>
+</body>
+</html>

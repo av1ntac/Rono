@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rono</string>
+    <string name="channel_run_name">Live run</string>
+    <string name="channel_run_description">Time, distance and pace while you run</string>
+</resources>

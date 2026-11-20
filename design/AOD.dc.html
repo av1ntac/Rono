@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Always-on display – run stats</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-variant-numeric:tabular-nums}
+</style>
+</helmet>
+<div style="width: 412px; height: 915px; box-sizing: border-box; background: #000000; color: #D6D9DC; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; align-items: center">
+
+  <div style="padding-top: 96px; display: flex; flex-direction: column; align-items: center; gap: 4px">
+    <span style="font-family: 'Space Grotesk', sans-serif; font-size: 56px; font-weight: 300; line-height: 1; color: #B9BEC2">18:52</span>
+    <span style="font-size: 14px; color: #9BA1A6">Wed, 18 Nov</span>
+  </div>
+
+  <div style="margin-top: 120px; display: flex; flex-direction: column; align-items: center; gap: 6px">
+    <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="4" r="2"></circle><path d="M7 21l3-6 3 2v5M10 15l1-5 4 3 3 1M11 10l-3 1-2 3"></path></svg>
+      Running
+    </span>
+    <span style="font-family: 'Space Grotesk', sans-serif; font-size: 104px; font-weight: 300; line-height: 1; letter-spacing: -0.03em">27:48</span>
+  </div>
+
+  <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 400; line-height: 1">5.24</span>
+      <span style="font-size: 13px; color: #9BA1A6">km</span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 400; line-height: 1; color: {{accent}}">5:06</span>
+      <span style="font-size: 13px; color: #9BA1A6">/km now</span>
+    </div>
+  </div>
+
+  <span style="margin-top: 28px; font-size: 14px; color: #9BA1A6">Avg pace 5:18 /km</span>
+
+  <span style="margin-top: auto; padding-bottom: 56px; font-size: 13px; color: #7E848A">Double-tap to wake</span>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C8F031","options":["#C8F031","#4FD1FF","#FF8A3D"]},"$preview":{"width":412,"height":915}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#C8F031' };
+  }
+}
+</script>
+</body>
+</html>
