@@ -11,8 +11,17 @@ Android running app (Kotlin, Jetpack Compose) built from the HTML mockups in `de
 | `LockScreen.dc.html`, `AOD.dc.html` | ongoing notification: `run/RunNotification.kt` + `res/layout/notification_run_*.xml` |
 
 Colours, type sizes, spacing and radii come from the mockups (`ui/theme/Theme.kt`). Space Grotesk is
-used for numbers and Inter for text; both are bundled as static TTFs in `res/font` (SIL Open Font
-License).
+used for numbers and Inter for text; both are bundled as static TTFs in `res/font`.
+
+## Fonts and licences
+
+The bundled fonts are licensed under the SIL Open Font License 1.1. The licence texts are in
+`licenses/`:
+
+| Font | Version | Source | Licence |
+| --- | --- | --- | --- |
+| Inter | 4.001 | [rsms/inter](https://github.com/rsms/inter) | [`licenses/Inter-OFL.txt`](licenses/Inter-OFL.txt) |
+| Space Grotesk | 2.000 | [floriankarsten/space-grotesk](https://github.com/floriankarsten/space-grotesk) | [`licenses/SpaceGrotesk-OFL.txt`](licenses/SpaceGrotesk-OFL.txt) |
 
 ## Build
 
